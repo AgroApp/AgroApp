@@ -7,15 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DailyNewsFragment extends Fragment  {
+public class DailyNewsFragment extends Fragment {
 
 
 

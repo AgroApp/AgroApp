@@ -1,20 +1,13 @@
 package com.example.sha.agro;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.nfc.cardemulation.CardEmulation;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
 import android.widget.GridLayout;
-import android.widget.LinearLayout;
-import android.widget.Scroller;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
