@@ -12,9 +12,12 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Main2Activity extends AppCompatActivity
 {
+    private DatabaseReference mDatabase;
 
     private FirebaseAuth mAuth;
 
@@ -31,7 +34,7 @@ public class Main2Activity extends AppCompatActivity
         Maingrid =(GridLayout) findViewById(R.id.gridlayout);
 
         setSingleEvent(Maingrid);
-
+        mDatabase = FirebaseDatabase.getInstance().getReference();
 
     }
 
