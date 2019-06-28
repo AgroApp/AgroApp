@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.example.sha.agro"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -20,16 +20,16 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.0'
-    implementation 'com.android.support:cardview-v7:27.1.0'
-    implementation 'com.android.support:recyclerview-v7:27.1.0'
-    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
     implementation 'com.google.firebase:firebase-database:8.9.7'
-    implementation 'com.google.firebase:firebase-iid:18.0.0'
-    implementation 'com.google.firebase:firebase-core:17.0.0'
+  //  implementation 'com.google.firebase:firebase-iid:18.0.0'
+    //implementation 'com.google.firebase:firebase-core:17.0.0'
     implementation 'com.android.support:support-annotations:27.1.1'
     implementation 'com.googlecode.libphonenumber:libphonenumber:8.9.7'
-    implementation 'com.google.firebase:firebase-firestore:20.0.0'
+  // implementation 'com.google.firebase:firebase-firestore:20.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.google.firebase:firebase-auth:18.0.0'
     implementation 'com.firebaseui:firebase-ui-database:3.2.2'

@@ -3,11 +3,7 @@ package com.example.sha.agro;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +14,10 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -33,6 +33,8 @@ import static android.content.ContentValues.TAG;
 /**
  * A simple {@link Fragment} subclass.
  */
+
+
 public class FertilizersFragment extends Fragment
 {
 
@@ -56,6 +58,7 @@ public class FertilizersFragment extends Fragment
       fertilizers = inflater.inflate(R.layout.fragment_fertilizers, container, false);
       Recycler = (RecyclerView) fertilizers.findViewById(R.id.recycler);
       Recycler.setHasFixedSize(true);
+
       Recycler.setLayoutManager(new LinearLayoutManager(getContext()));
       mDatabase=FirebaseDatabase.getInstance().getReference().child("Shops/Fertilizers");
 
@@ -82,7 +85,7 @@ public class FertilizersFragment extends Fragment
         TextView Tname,Tdiscription;
         ImageView Timage;
 
-    public FertilizerViewHolder(@Nullable View itemView) {
+    public FertilizerViewHolder( View itemView) {
 
         super(itemView);
 
